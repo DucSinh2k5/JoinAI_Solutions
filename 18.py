@@ -1,6 +1,7 @@
 def pairwise_similarity(vectors):
     n = len(vectors)
     norms = [sum(x**2 for x in v) ** 0.5 for v in vectors]
+
     
     similarity_matrix = []
     for i in range(n):
